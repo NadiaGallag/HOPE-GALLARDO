@@ -14,108 +14,63 @@
 /* -------------------------- FONDO DE FODAS LAS PESTAÑAS ----------------------------------- */
 /* ****************************************************************************************** */
 .fondo {
-    background-image: url('../Medias/m.jpg');
+    background-image: url(../Medias/m.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    background-color: rgba(255, 238, 169, 0.856); opacity: 05;
+    background-color: rgba(255, 238, 169, 0.856);
     width: 100%;
-    opacity: 80%;
+    height: 100%;
 }
 
 .fondo_1 {
-    background-image: url(../Medias/g.jpg);
+    background-image: url(../Medias/g.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    background-color: rgba(255, 238, 169, 0.856); opacity: 05;
+    background-color: rgba(255, 238, 169, 0.856);
     width: 100%;
+    height: 100%;
 
 }
 
 .fondo_2 {
-    background-image: url(../Medias/mm.jpg);
+    background-image: url(../Medias/mm.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    background-color: rgba(255, 238, 169, 0.856); opacity: 05;
+    background-color: rgba(255, 238, 169, 0.856);
     width: 100%;
+    height: 100%;
 }
 
 .fondo_3 {
-    background-image: url(../Medias/cor.jpg);
+    background-image: url(../Medias/cor.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    background-color: rgba(255, 238, 169, 0.856); opacity: 05;
+    background-color: rgba(255, 238, 169, 0.856); 
     width: 100%;
+    height: 100%;
 }
 
 .fondo_4 {
-    background-image: url(../Medias/palta.jpg);
+    background-image: url(../Medias/palta.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    background-color: rgba(255, 238, 169, 0.856); opacity: 05;
+    background-color: rgba(255, 238, 169, 0.856);
     width: 100%;
 }
 
 /* *********************************************************************************************** */
 /* -------------------------- FIN FONDO DE FODAS LAS PESTAÑAS ------------------------------------ */
 /* *********************************************************************************************** */
-
-
-
-
-/* ************************************************************************************************ */
-/* ---------------------------------- INICIO DE HEADER -------------------------------------------- */
-/* ************************************************************************************************ */
-
-
-.Barra_ {
-    display:flex;
-    justify-content: space-between;
-    position: sticky;
-    background-color: rgba(2, 2, 2, 0.5);
-    align-items: center;
-}
-
-h1 {
-    font-size: 40px;
-}
-.header_navegation_desp {
-    display: flex;
-}
-
-.header_navegation_desp li{
-    padding: 32px;   
-    margin-bottom: 50px;
-    font-size: 20px;
-}
-
-@media screen and (max-width:480px) {
-    .header_navegation_desp {
-    display: none;
-    }
-    h1 {
-        font-size: 1rem;
-        align-items: center;
-    }
-    .Barra_ {
-        justify-content: center;
-    }
-}
-
-
-/* ************************************************************************************************** */
-/* ------------------------------------- FIN DE HEADER ---------------------------------------------  */
-/* ************************************************************************************************** */
-
 
 /* ************************************************************************************************** */
 /* -----------------------------------------  MAIN HOME ----------------------------------------- */
@@ -145,16 +100,17 @@ h1 {
 /* --------------------------------------- FOOTER ------------------------------------------------ */
 /* ************************************************************************************************ */
 
+
 .footer_sec {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color:  rgba(2, 2, 2, 0.5);
+    background-color:  rgba(2, 2, 2, 0.57);
     padding: 1%;
     margin-top: 20%;
 }
 
-footer section a {
+footer div a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,6 +120,7 @@ footer section a {
     height: 2.8rem;
     background-color: rgb(250, 196, 20);
     border-radius: 50%;
+    text-decoration: none;
     
 }
 
@@ -229,11 +186,12 @@ main div p {
 /* -------------------------------- INICIO DE QUINES SOMOS ----------------------------- */
 /* ************************************************************************************** */
 
-h2 {
+
+.somos {
     color: black;
     font-weight: bold;
     text-align: center;
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 
@@ -248,6 +206,8 @@ h2 {
 .texto1 p, .texto2 p {
     color: black !important;
     font-weight: bold;
+    margin: 8vh;
+    font-size: 3vw;
 }
 
 .texto1 {
@@ -255,7 +215,8 @@ h2 {
     display: flex;
     align-items:center;
     justify-content: left;
-    font-size: 2rem;
+    margin: 5vw;
+    font-size: 3vw;
 }
 
 .foto1 {
@@ -271,9 +232,9 @@ h2 {
     display: flex;
     align-items:center;
     justify-content: right;
-    font-size: 2rem;
     order: 2;
-    
+    font-size: 3vw;
+    margin-top: 9vw;
 }
 
 .foto2 {
@@ -310,46 +271,22 @@ h2 {
 /* --------------------------------- INICIO CONTACTO ------------------------------- */
 /* ******************************************************************************** */
 
+.contact__main p {
+    font-size: 30px;
+    margin: 3rem;
+}
+
+
 .contact__main{
     display: grid;
     grid-template-columns: 1 60%;
     grid-template-rows: repeat(2 30% 60%);
     justify-content: center;
-    gap: 15%;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-
-.input__{
-    display: grid;
-    justify-content: center;
-    gap: 3vw;
-    margin-top: 1vw;
-    background-color: rgba(196, 196, 196, 0.8);
-    font-size: 25px;
-    color: black;
-    font-weight: bold
-}
-
-#form__contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5vw;
-    margin-top: 1vw;
-    align-items: center;
-}
-
-@media screen and (max-width:480px) {
-    .contact__main {
-        font-size: 1rem;
-        margin-top: 10%;
-    }
-    #form__contacto {
-        font-size: 0.5rem;
-    }
-}
 
 /* ***************************************************************************** */
 /* ---------------------------- FIN CONTACTO ----------------------------------- */
@@ -359,44 +296,20 @@ h2 {
 /* ---------------------------------- SUCURSALES ---------------------------------- */
 /* *************************************************************************** */
 
-
 .sucursales {
     display: grid;
-    grid-template-columns: 1 80%;
-    grid-template-rows: 2 repeat( 40% 30%);
+    grid-template-columns: 60vw;
     justify-content: center;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 1%;
-
-}
-
-.sucursales h2 {
-    gap: 40%;
-    font-weight: bold;
-    font-size: 45px;
-}
-
-.sucursales_ li {
+    align-items: center;
+    margin: 3rem;
     font-size: 30px;
     font-weight: bold;
-    color: black !important;
-    margin-top: 2%;
-    
-
-/* .sucursales h2{
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    font-size: 50px;
 }
 
-.sucursales_ li {
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-} */
+.mapa div {
+    width: 100%;
+}
+
 
 /**************************************************************************** */
 /* ------------------------ FIN SUCURSALES ---------------------------------- */
